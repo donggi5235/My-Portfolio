@@ -1,25 +1,24 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 export const Nav = () => {
-  const ref = useRef<HTMLElement>(null);
-  const [isIntersecting, setIntersecting] = useState(true);
+  // const ref = useRef<HTMLElement>(null);
+  // const [isIntersecting, setIntersecting] = useState(true);
 
-  useEffect(() => {
-    if (!ref.current) return;
-    const observer = new IntersectionObserver(([entry]) =>
-      setIntersecting(entry.isIntersecting)
-    );
+  // useEffect(() => {
+  //   if (!ref.current) return;
+  //   const observer = new IntersectionObserver(([entry]) =>
+  //     setIntersecting(entry.isIntersecting)
+  //   );
 
-    observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
+  //   observer.observe(ref.current);
+  //   return () => observer.disconnect();
+  // }, []);
 
   return (
     <header
-      ref={ref}
+      // ref={ref}
       className="w-1/5 fixed left-0 top-0 z-50 h-dvh flex items-center justify-center border-r border-solid border-black"
     >
       <div className="w-full flex flex-col pb-52">
@@ -35,13 +34,7 @@ export const Nav = () => {
             />
           </Link>
         </h1>
-        <div
-          className={`flex flex-col items-center justify-center p-6 mx-auto text-center duration-200 border-r  ${
-            isIntersecting
-              ? "bg-zinc-900/0 border-transparent"
-              : "bg-zinc-900/500  border-zinc-800 "
-          }`}
-        >
+        <div className="flex flex-col items-center justify-center p-6 mx-auto text-center duration-200">
           <div className="flex flex-col justify-between gap-8">
             <Link
               href="/projects"
