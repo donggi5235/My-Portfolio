@@ -44,16 +44,16 @@ export const Nav: React.FC = () => {
         >
           <div className="flex flex-col justify-between gap-8">
             <Link
-              href="/about"
-              className="duration-200 text-zinc-400 hover:text-black"
-            >
-              About
-            </Link>
-            <Link
               href="/projects"
               className="duration-200 text-zinc-400 hover:text-black"
             >
               Projects
+            </Link>
+            <Link
+              href="/about"
+              className="duration-200 text-zinc-400 hover:text-black"
+            >
+              About
             </Link>
             <Link
               href="/contact"

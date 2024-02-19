@@ -2,8 +2,8 @@ import { Project } from "../components/Project";
 
 export default function Home() {
   return (
-    <div className="text-center w-1/2 mx-auto">
-      <h2 className="text-4xl color-black font-bold">PROJECTS</h2>
+    <div className="text-center">
+      <h2 className="text-4xl color-black font-bold pb-20">PROJECTS</h2>
       <Project />
     </div>
   );

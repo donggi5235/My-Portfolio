@@ -1,8 +1,8 @@
 export default function Home() {
   return (
     <div className="text-center w-1/2 mx-auto">
-      <h2 className="text-4xl color-black font-bold">ABOUT</h2>
-      <div className="pt-20 flex flex-col gap-4 leading-7">
+      <h2 className="text-4xl color-black font-bold pb-20">ABOUT</h2>
+      <div className="flex flex-col gap-4 leading-7">
         <p className="">
           안녕하세요! 저는 현재 <b>웹에이전시</b>에서 근무 하고 있는
           이동기입니다. 현재 소속 되어있는 부서는 디자인팀이며,{" "}
