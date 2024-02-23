@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 type IconProps = {
-  link?: string;
+  link: string | "";
   tit?: string;
   txt?: string;
   target?: string;
